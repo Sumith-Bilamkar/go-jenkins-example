@@ -4,6 +4,7 @@ pipeline {
     environment {
         // Set GOPATH to your workspace or Go directory (e.g., /Users/sumithb/go)
         GOPATH = "/Users/sumithb/go"
+        PATH = "${GOROOT}/bin:${PATH}"
 
         // Enabling Go Modules
         GO111MODULE = "on"
